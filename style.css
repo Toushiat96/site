@@ -88,7 +88,131 @@ header {
     margin-bottom: 20px;
   }
   
-  
+  /* css for site footer */
+  .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.color li a{
+color: white;
+text-align: center;
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
   @media screen and (max-width:960px) {
   .col{
     flex: 100%;
@@ -114,4 +238,162 @@ header {
         color: #fff;
     }
     
+  }
+
+  /* contact us css */
+  .contact4 {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+  }
+  
+  .contact4 h1, .contact4 h2, .contact4 h3, .contact4 h4, .contact4 h5, .contact4 h6 {
+    color: #3e4555;
+  }
+  
+  .contact4 .font-weight-medium {
+    font-weight: 500;
+  }
+  
+  .contact4 .form-control {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .contact4 .form-control:focus {
+    border-color: #ffffff;
+  }
+  
+  .contact4 input::-webkit-input-placeholder,
+  .contact4 textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .contact4 input:-ms-input-placeholder,
+  .contact4 textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .contact4 input::placeholder,
+  .contact4 textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .contact4 .right-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  
+  .contact4.bg-info {
+      background-color: #188ef4 !important;
+  }
+  
+  .contact4 .text-inverse {
+      color: #3e4555 !important;
+  }
+  
+  @media (min-width: 1024px) {
+    .contact4 .contact-box {
+      padding: 80px 105px 80px 0px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .contact4 .contact-box {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .contact4 .right-image {
+        position: relative;
+        bottom: -95px;
+    }
+  }
+
+  /* css for  events section  */
+  .container1 {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+    
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
   }
